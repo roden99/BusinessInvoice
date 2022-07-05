@@ -60,7 +60,7 @@
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1376, 40);
+            this.panel16.Size = new System.Drawing.Size(1386, 40);
             this.panel16.TabIndex = 3;
             // 
             // label1
@@ -84,7 +84,7 @@
             this.panel5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.Location = new System.Drawing.Point(0, 40);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1376, 40);
+            this.panel5.Size = new System.Drawing.Size(1386, 40);
             this.panel5.TabIndex = 5;
             // 
             // simpleButton1
@@ -128,7 +128,7 @@
             this.panel6.Controls.Add(this.textEdit1);
             this.panel6.Controls.Add(this.simpleButton2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(1132, 0);
+            this.panel6.Location = new System.Drawing.Point(1142, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(244, 38);
             this.panel6.TabIndex = 9;
@@ -202,7 +202,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel14.Location = new System.Drawing.Point(0, 38);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1376, 2);
+            this.panel14.Size = new System.Drawing.Size(1386, 2);
             this.panel14.TabIndex = 1;
             // 
             // checkedListBoxControl2
@@ -234,7 +234,7 @@
             this.checkedListBoxControl2.Location = new System.Drawing.Point(0, 80);
             this.checkedListBoxControl2.MultiColumn = true;
             this.checkedListBoxControl2.Name = "checkedListBoxControl2";
-            this.checkedListBoxControl2.Size = new System.Drawing.Size(1376, 32);
+            this.checkedListBoxControl2.Size = new System.Drawing.Size(1386, 32);
             this.checkedListBoxControl2.TabIndex = 11;
             // 
             // dataGridView1
@@ -251,14 +251,14 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 112);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1376, 628);
+            this.dataGridView1.Size = new System.Drawing.Size(1386, 630);
             this.dataGridView1.TabIndex = 12;
             // 
             // frmInvoicing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1376, 740);
+            this.ClientSize = new System.Drawing.Size(1386, 742);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.checkedListBoxControl2);
             this.Controls.Add(this.panel5);
