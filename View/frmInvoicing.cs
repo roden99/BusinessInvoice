@@ -20,7 +20,7 @@ namespace View
 
         private void FrmInvoicing_Load(object sender, EventArgs e)
         {
-
+            // test
         }
 
         private void SimpleButton1_Click(object sender, EventArgs e)
