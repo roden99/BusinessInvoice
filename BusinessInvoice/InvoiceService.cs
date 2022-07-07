@@ -16,7 +16,7 @@ namespace BusinessInvoice
     {
 
 
-        public async Task<Boolean> AddInvoice(CustomerInvoice model, DataGridView dg)
+        public async Task<Boolean> AddInvoice(CustomerInvoice invModel, DataGridView dg)
         {
 
             IDbConnection con = new SqlConnection(conClientManagementDB);
@@ -25,11 +25,11 @@ namespace BusinessInvoice
             try
             {
                 DynamicParameters param = new DynamicParameters();
-                param.Add("InvoiceNumber", model.InvoiceNumber);
+                param.Add("InvoiceNumber", invModel.InvoiceNumber);
 
-                param.Add("Reference", model.Reference);
-                param.Add("IssueDate", model.IssueDate);
-                param.Add("DueDate", model.DueDate);
+                param.Add("Reference", invModel.Reference);
+                param.Add("IssueDate", invModel.IssueDate);
+                param.Add("DueDate", invModel.DueDate);
 
                int InvoiceID= await SqlMapper.ExecuteScalarAsync<int>(con, "sp_Add_Invoice", param, tran, commandType: CommandType.StoredProcedure);
 
@@ -40,6 +40,12 @@ namespace BusinessInvoice
                     param = new DynamicParameters();
                     param.Add("InvoiceID", InvoiceID);
                     param.Add("Description", dg["ColDescription",i].Value.ToString());
+                    param.Add("Quantity", dg["Colqty", i].Value.ToString());
+                    param.Add("Unitprice", dg["ColUnitprice", i].Value.ToString());
+                    param.Add("Discount",dg["ColDiscount",i].Value.ToString());
+                    param.Add("TaxRate",dg["ColTaxRate",i].Value.ToString());
+
+                    
                     await SqlMapper.ExecuteScalarAsync<int>(con, "sp_Add_InvoiceItems", param, tran, commandType: CommandType.StoredProcedure);
                     
                 }

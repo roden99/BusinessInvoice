@@ -18,15 +18,57 @@ namespace View
             InitializeComponent();
         }
 
+
+
+        public void loadInvoice()
+        {
+
+            this.customerInvoiceTableAdapter.Fill(this.dataSet1.CustomerInvoice);
+        }
+
         private void FrmInvoicing_Load(object sender, EventArgs e)
         {
+            try
+            {
+                this.customerInvoiceTableAdapter.Fill(this.dataSet1.CustomerInvoice);
+                dgInvoiceList.Font = checkedListBoxControl2.Font;
+                
+            }
+
+            catch(Exception Error)
+            {
+                MessageBox.Show(Error.Message,"System Information",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+
+            }
 
         }
 
-        private void SimpleButton1_Click(object sender, EventArgs e)
+        private void BtnCreateInvoice_Click(object sender, EventArgs e)
         {
-            frmCreateInvoice createinvoice = new frmCreateInvoice();
-            createinvoice.ShowDialog();
+
+            try
+            {
+          
+
+                frmCreateInvoice createinvoice = new frmCreateInvoice();
+                createinvoice.Owner = this;
+                createinvoice.ShowDialog();
+
+            }
+
+
+            catch (Exception Error)
+            {
+                MessageBox.Show(Error.Message, "System Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+
+            }
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

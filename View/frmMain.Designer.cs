@@ -146,7 +146,6 @@
             this.accordionControlElement128 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement129 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement132 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -2088,7 +2087,7 @@
             this.accordionControl2.Name = "accordionControl2";
             this.accordionControl2.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.True;
             this.accordionControl2.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden;
-            this.accordionControl2.Size = new System.Drawing.Size(250, 748);
+            this.accordionControl2.Size = new System.Drawing.Size(250, 750);
             this.accordionControl2.TabIndex = 3;
             this.accordionControl2.Text = "accordionControl2";
             this.accordionControl2.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
@@ -2261,21 +2260,9 @@
             this.accordionControlElement132.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement132.Text = "Lorem Ipsum";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(432, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
-            // 
             // frmMain
             // 
-            this.ClientSize = new System.Drawing.Size(1416, 748);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1426, 750);
             this.Controls.Add(this.accordionControl2);
             this.IsMdiContainer = true;
             this.LookAndFeel.SkinName = "The Bezier";
@@ -2414,6 +2401,5 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement128;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement129;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement132;
-        private System.Windows.Forms.Button button1;
     }
 }
