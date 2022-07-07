@@ -1,22 +1,28 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace View
 {
-    static class Program
+    class Program : WindowsFormsApplicationBase
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            var app = new Program();
+            app.EnableVisualStyles = true;
+            app.ShutdownStyle = ShutdownMode.AfterAllFormsClose;
+
+            app.MainForm = new frmLogin();
+
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-AU");
+
+            app.Run(args);
         }
     }
 }

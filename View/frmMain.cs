@@ -15,8 +15,7 @@ namespace View
 {
     public partial class frmMain : DevExpress.XtraEditors.XtraForm
     {
-
-
+        public UserAccount loggedInUser { get; set; } = new UserAccount();
         InvoiceService invoiceservice = new InvoiceService();
         public frmMain()
         {
@@ -127,6 +126,21 @@ namespace View
 
 
 
+        }
+
+        private void aceContacts_Click(object sender, EventArgs e)
+        {
+            frmContactList contactList = (frmContactList)Application.OpenForms["frmContactList"];
+            if (contactList == null)
+            {
+                contactList = new frmContactList();
+                contactList.MdiParent = this;
+                contactList.Show();
+            }
+            else
+            {
+                contactList.BringToFront();
+            }
         }
     }
 }

@@ -2086,7 +2086,7 @@
             this.accordionControl2.Name = "accordionControl2";
             this.accordionControl2.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.True;
             this.accordionControl2.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden;
-            this.accordionControl2.Size = new System.Drawing.Size(250, 750);
+            this.accordionControl2.Size = new System.Drawing.Size(250, 752);
             this.accordionControl2.TabIndex = 3;
             this.accordionControl2.Text = "accordionControl2";
             this.accordionControl2.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
@@ -2235,10 +2235,11 @@
             this.aceContacts.Name = "aceContacts";
             this.aceContacts.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.aceContacts.Text = "Contacts";
+            this.aceContacts.Click += new System.EventHandler(this.aceContacts_Click);
             // 
             // frmMain
             // 
-            this.ClientSize = new System.Drawing.Size(1426, 750);
+            this.ClientSize = new System.Drawing.Size(1436, 752);
             this.Controls.Add(this.accordionControl2);
             this.IsMdiContainer = true;
             this.LookAndFeel.SkinName = "The Bezier";
