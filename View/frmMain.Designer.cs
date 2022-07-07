@@ -144,6 +144,8 @@
             this.accordionControlElement126 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement127 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement128 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement129 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement132 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.aceContacts = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl2)).BeginInit();
             this.SuspendLayout();
@@ -2086,7 +2088,7 @@
             this.accordionControl2.Name = "accordionControl2";
             this.accordionControl2.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.True;
             this.accordionControl2.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden;
-            this.accordionControl2.Size = new System.Drawing.Size(250, 752);
+            this.accordionControl2.Size = new System.Drawing.Size(250, 750);
             this.accordionControl2.TabIndex = 3;
             this.accordionControl2.Text = "accordionControl2";
             this.accordionControl2.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
@@ -2224,6 +2226,40 @@
             // 
             // aceContacts
             // 
+            this.accordionControlElement129.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.accordionControlElement129.Appearance.Disabled.Options.UseFont = true;
+            this.accordionControlElement129.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.accordionControlElement129.Appearance.Hovered.Options.UseFont = true;
+            this.accordionControlElement129.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.accordionControlElement129.Appearance.Normal.Options.UseFont = true;
+            this.accordionControlElement129.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.accordionControlElement129.Appearance.Pressed.Options.UseFont = true;
+            this.accordionControlElement129.Name = "accordionControlElement129";
+            this.accordionControlElement129.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement129.Text = "Manage Clients";
+            // 
+            // accordionControlElement132
+            // 
+            this.accordionControlElement132.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.accordionControlElement132.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
+            this.accordionControlElement132.Appearance.Disabled.Options.UseFont = true;
+            this.accordionControlElement132.Appearance.Disabled.Options.UseForeColor = true;
+            this.accordionControlElement132.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.accordionControlElement132.Appearance.Hovered.ForeColor = System.Drawing.Color.White;
+            this.accordionControlElement132.Appearance.Hovered.Options.UseFont = true;
+            this.accordionControlElement132.Appearance.Hovered.Options.UseForeColor = true;
+            this.accordionControlElement132.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.accordionControlElement132.Appearance.Normal.ForeColor = System.Drawing.Color.White;
+            this.accordionControlElement132.Appearance.Normal.Options.UseFont = true;
+            this.accordionControlElement132.Appearance.Normal.Options.UseForeColor = true;
+            this.accordionControlElement132.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.accordionControlElement132.Appearance.Pressed.ForeColor = System.Drawing.Color.White;
+            this.accordionControlElement132.Appearance.Pressed.Options.UseFont = true;
+            this.accordionControlElement132.Appearance.Pressed.Options.UseForeColor = true;
+            this.accordionControlElement132.Name = "accordionControlElement132";
+            this.accordionControlElement132.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement132.Text = "Lorem Ipsum";
+            // 
             this.aceContacts.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.aceContacts.Appearance.Disabled.Options.UseFont = true;
             this.aceContacts.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -2239,7 +2275,7 @@
             // 
             // frmMain
             // 
-            this.ClientSize = new System.Drawing.Size(1436, 752);
+            this.ClientSize = new System.Drawing.Size(1426, 750);
             this.Controls.Add(this.accordionControl2);
             this.IsMdiContainer = true;
             this.LookAndFeel.SkinName = "The Bezier";
@@ -2376,6 +2412,8 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement126;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement127;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement128;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement129;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement132;
         private DevExpress.XtraBars.Navigation.AccordionControlElement aceContacts;
     }
 }

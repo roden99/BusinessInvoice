@@ -47,7 +47,7 @@ namespace View
 
         private void FrmMain_Load_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private async void Button1_Click(object sender, EventArgs e)
