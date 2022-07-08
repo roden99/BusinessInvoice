@@ -31,7 +31,7 @@ namespace BusinessInvoice
                 param.Add("IssueDate", invModel.IssueDate);
                 param.Add("DueDate", invModel.DueDate);
 
-               int InvoiceID= await SqlMapper.ExecuteScalarAsync<int>(con, "sp_Add_Invoice", param, tran, commandType: CommandType.StoredProcedure);
+               int InvoiceID= await SqlMapper.ExecuteScalarAsync<int>(con, "SP_TXINV_AddInvoice", param, tran, commandType: CommandType.StoredProcedure);
 
 
                 for (int i = 0; i < dg.Rows.Count; i++)
@@ -46,7 +46,7 @@ namespace BusinessInvoice
                     param.Add("TaxRate",dg["ColTaxRate",i].Value.ToString());
 
                     
-                    await SqlMapper.ExecuteScalarAsync<int>(con, "sp_Add_InvoiceItems", param, tran, commandType: CommandType.StoredProcedure);
+                    await SqlMapper.ExecuteScalarAsync<int>(con, "SP_TXNINV_AddInvoiceItems", param, tran, commandType: CommandType.StoredProcedure);
                     
                 }
 
